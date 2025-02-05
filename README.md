@@ -544,7 +544,7 @@ const signerFunction = createSigner.fromEthersWallet(wallet);
 await guildClient.guild.create(
   {
     name: "My New Guild",
-    urlName: "my-new-guild-123", // Optinal
+    urlName: "my-new-guild-123", // Optional
     description: "Cool stuff", // Optional
     admins: ["0x916b1aBC3C38852B338a22B08aF19DEe14113627"], // Optional
     showMembers: true, // Optional

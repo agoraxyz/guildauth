@@ -38,7 +38,7 @@
 
 ## Signing a message
 
-Use `createSigner` to construct a signer function. There are multiple ways to create a signer function, for example `createSigner.fromEthersWallet` can construct a signer from an `ethers.Walllet`
+Use `createSigner` to construct a signer function. There are multiple ways to create a signer function, for example `createSigner.fromEthersWallet` can construct a signer from an `ethers.Wallet`
 
 ```ts
 import { createSigner, guild } from "@guildxyz/sdk";
@@ -100,7 +100,7 @@ const guildMembership = userMemberships.find(
 
 #### `join`
 
-Use the `actions.join` client. Create a new join action with `actions.join.start`, then poll it's state by either calling `actions.join.poll`, or `actions.join.await`. The former will make a single poll, while the latter will keep polling the state until the job is done
+Use the `actions.join` client. Create a new join action with `actions.join.start`, then poll its state by either calling `actions.join.poll`, or `actions.join.await`. The former will make a single poll, while the latter will keep polling the state until the job is done
 
 ```ts
 import { actions } from "@guildxyz/sdk";
@@ -215,7 +215,7 @@ await guild.delete(someGuildId, mySigner);
 
 #### `get`
 
-Use `guild.role.get`. It now needs a `guildIdOrUrlName` param as well, and optionally takes a signer for more detailed results. The `guildId`, `members`, `requirements` and `rolePlatforms` fields aren't included in the result anymore. `guildId` is assumed to be known, as it is needed to make the get call, the other three can be fetched sepatarately with `guild.getMembers`, `guild.role.requirement.getAll` and `guild.role.reward.getAll`
+Use `guild.role.get`. It now needs a `guildIdOrUrlName` param as well, and optionally takes a signer for more detailed results. The `guildId`, `members`, `requirements` and `rolePlatforms` fields aren't included in the result anymore. `guildId` is assumed to be known, as it is needed to make the get call, the other three can be fetched separately with `guild.getMembers`, `guild.role.requirement.getAll` and `guild.role.reward.getAll`
 
 ```ts
 import { guild } from "@guildxyz/sdk";

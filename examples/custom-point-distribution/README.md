@@ -17,7 +17,7 @@ It sets the following things in the Guild:
 
 - Basic data (its name, urlName, ...)
 - A role with a GUILD_SNAPSHOT requirement. This requirement will be the source of the point distribution
-- A POINTS reward, which taks it's input from the requirement
+- A POINTS reward, which takes its input from the requirement
 
 ## Editing the points
 
